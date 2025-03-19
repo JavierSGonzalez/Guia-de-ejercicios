@@ -84,3 +84,38 @@ const dup = [2, 4, 6]
 const duplicados = dup.map(dupli => dupli * 2);
 
 document.getElementById("ej3_3").innerHTML = duplicados
+
+//Ejercicio 4.1
+
+const libro ={
+    titulo: "The twisted ones",
+    autor: "Scott Cawthon",
+    año: "2017"
+}
+
+const transformation = JSON.stringify(libro);
+document.getElementById("ej4_1").innerHTML = transformation
+
+//Ejercicio 4.2
+
+const jason = '{"nombre": "Ana", "edad": 30, "ciudad": "Madrid"}'
+
+const regres = JSON.parse(jason)
+document.getElementById("ej4_2").innerHTML = regres.edad
+
+//Ejercicio 4.3
+
+const parsea = '[{"id": 1, "producto": "Lápiz"}, {"id": 2, "producto": "Borrador"}]'
+
+const parseado = JSON.parse(parsea)
+parseado.forEach(item => {
+    console.log(item.producto);
+});
+
+const lista = document.getElementById("ej4_3");
+
+parseado.forEach(item => {
+    const li = document.createElement("li");
+    li.textContent = item.producto;
+    lista.appendChild(li);
+});
