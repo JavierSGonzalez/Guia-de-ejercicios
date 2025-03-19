@@ -65,3 +65,22 @@ for (let mer = 0; mer < men.length; mer++){
 }
 
 document.getElementById("ej2_3").innerHTML = menor
+
+//Ejercicio 3.1
+
+const sumar = (a,b) => a+b;
+
+document.getElementById("ej3_1").innerHTML = sumar
+
+//Ejercicio 3.2
+
+const cua = (j) => j*j
+
+document.getElementById("ej3_2").innerHTML = cua
+
+//Ejercicio 3.3
+
+const dup = [2, 4, 6]
+const duplicados = dup.map(dupli => dupli * 2);
+
+document.getElementById("ej3_3").innerHTML = duplicados
