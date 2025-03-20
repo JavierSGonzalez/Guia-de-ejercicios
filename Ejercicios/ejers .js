@@ -150,3 +150,12 @@ try{
 }
 
 //Ejercicio 6.1
+
+async function esperarSegundos(segundos){
+    let intento = new Promise(function(resolve) {
+    setTimeout(function() {resolve("aparición en 3 segundos");}, 3000);
+    });
+    document.getElementById("ej6_1").innerHTML = await intento;
+}
+
+esperarSegundos();
