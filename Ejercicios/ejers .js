@@ -119,3 +119,34 @@ parseado.forEach(item => {
     li.textContent = item.producto;
     lista.appendChild(li);
 });
+
+//Ejercicio 5.1
+
+try{
+    let crash = 777/0;
+    document.getElementById("ej5_1").innerHTML = "Resultado: " + crash;
+} catch (error){
+    document.getElementById("ej5_1").innerHTML = "Crash: " + error.message;
+}
+
+//Ejercicio 5.2
+
+try{
+    let fail = a+5
+    document.getElementById("ej5_2").innerHTML = "Resultado: " + fail;
+} catch (error){
+    document.getElementById("ej5_2").innerHTML = "Error: " + error.message;
+}
+
+//Ejercicio 5.3
+
+try{
+    let final = S+1
+    document.getElementById("ej5_3").innerHTML = "Resultado: " + final;
+} catch (error){
+    document.getElementById("ej5_3").innerHTML = "Error: " + error.message;
+} finally{
+    document.getElementById("ej5_3-2").innerHTML = "Intentalo nuevamente";
+}
+
+//Ejercicio 6.1
