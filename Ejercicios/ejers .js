@@ -178,8 +178,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
     .catch(error => console.error("Error al obtener datos:", error)
     );
 
-let parseado7 = JSON.parse(characters)
+let parseado7 = JSON.parse(data)
 
-parseado7.forEach(item => {console.log(item.house);
+parseado7.forEach(item => {console.log(item.name);
 
 });
