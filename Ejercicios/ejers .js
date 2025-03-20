@@ -159,3 +159,27 @@ async function esperarSegundos(segundos){
 }
 
 esperarSegundos();
+
+//Ejercicio 7.1
+
+let lista7 = document.getElementById("ej7_1");
+
+
+fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(data => {
+        data.forEach(data =>{
+                const li = document.createElement("li");
+                li.textContent = data.name;
+                lista7.appendChild(li);
+        })
+    })
+
+    .catch(error => console.error("Error al obtener datos:", error)
+    );
+
+let parseado7 = JSON.parse(characters)
+
+parseado7.forEach(item => {console.log(item.house);
+
+});
